@@ -3,7 +3,7 @@ Using spotify playlist to download music from YouTube and save as MP3
 
 # pre req
 All of the following packages are required to be installed.
-# unicode_literals, youtube_dl, csv, re, urllib.request, datetime
+# unicode_literals, youtube_dl, csv, re, urllib.request, datetime, ffmpeg/avcon or ffprobe/avprobe
 
 # How to get the playlist
 First of all you need to find your favourite playlist from wherever. Spotify is a good place to start.
