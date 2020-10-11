@@ -7,7 +7,7 @@ songList = []
 urls = []
 
 #opening spotify.csv (change to whatever file required)
-with open('spotify.csv') as csvfile:
+with open('Input/spotify.csv') as csvfile:
 #separating each line by comma and taking the first item from the row.
     readCSV = csv.reader(csvfile, delimiter=',')
     for row in readCSV:
@@ -16,6 +16,7 @@ with open('spotify.csv') as csvfile:
 #youtube downloader settings
 ydl_opts = {
     'format': 'bestaudio/best',
+    'outtmpl': '/OutputMP3/%(title)s.%(ext)s',
     'postprocessors': [{
         'key': 'FFmpegExtractAudio',
         'preferredcodec': 'mp3',
@@ -41,6 +42,6 @@ except Exception:
     print("Some error occured!!")
     pass 
 
-with open('YouTubeLink_'+ timestamp + '.csv', 'w') as myfile:
+with open('OutputCSV/YouTubeLink_'+ timestamp + '.csv', 'w') as myfile:
     wr = csv.writer(myfile, delimiter='\n',quoting=csv.QUOTE_NONE)
     wr.writerow(urls)
