@@ -1,6 +1,10 @@
 # YouTube-To-MP3
 Using spotify playlist to download music from YouTube and save as MP3
 
+# pre req
+All of the following packages are required to be installed.
+# unicode_literals, youtube_dl, csv, re, urllib.request, datetime
+
 # How to get the playlist
 First of all you need to find your favourite playlist from wherever. Spotify is a good place to start.
 Once you get the playlist, get the link. Use some website to download it as CSV file. 
@@ -23,7 +27,3 @@ Once the playlist file is included in the .py , you can run the script. This sho
 
 MP3 is downloaded using YouTubeDL : https://ytdl-org.github.io/youtube-dl/index.html
 Please have a  look at their documentation is something doesn't work correctly.
-
-# pre req
-All of the following packages are required to be installed.
-unicode_literals, youtube_dl, csv, re, urllib.request, datetime
